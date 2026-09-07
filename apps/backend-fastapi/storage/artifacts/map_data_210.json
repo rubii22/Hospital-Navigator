@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "session_id": 210,
+  "floor_id": 7,
+  "nodes": [
+    {
+      "id": "n_entry",
+      "label": "Scan Entry Point",
+      "type": "entrance",
+      "x": 15.0,
+      "y": 15.0,
+      "z": 0.0,
+      "accessible": true,
+      "metadata": null
+    }
+  ],
+  "edges": [],
+  "rooms": [
+    {
+      "id": "room_210",
+      "name": "Scanned Room #210",
+      "x": 20,
+      "y": 20,
+      "width": 140,
+      "height": 100,
+      "bounds": [
+        {
+          "x": 20,
+          "y": 20
+        },
+        {
+          "x": 160,
+          "y": 20
+        },
+        {
+          "x": 160,
+          "y": 120
+        },
+        {
+          "x": 20,
+          "y": 120
+        }
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "d_entry",
+      "name": "Main Entrance Door",
+      "x": 40,
+      "y": 20
+    }
+  ]
+}

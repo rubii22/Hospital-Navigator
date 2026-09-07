@@ -1,0 +1,54 @@
+# Development docker-compose — documents the intended service separation.
+# API, worker, Redis, and Postgres are all independent services.
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: iamhuzaifa
+      POSTGRES_DB: hospital_navigator
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  api:
+    build: .
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://postgres:iamhuzaifa@db:5432/hospital_navigator
+      - ASYNC_DATABASE_URL=postgresql+asyncpg://postgres:iamhuzaifa@db:5432/hospital_navigator
+      - REDIS_URL=redis://redis:6379/0
+    env_file: .env
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - .:/app
+      - ./storage:/app/storage
+
+  worker:
+    build: .
+    command: celery -A app.core.celery_app.celery_app worker --loglevel=info
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://postgres:iamhuzaifa@db:5432/hospital_navigator
+      - ASYNC_DATABASE_URL=postgresql+asyncpg://postgres:iamhuzaifa@db:5432/hospital_navigator
+      - REDIS_URL=redis://redis:6379/0
+    env_file: .env
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - .:/app
+      - ./storage:/app/storage
+
+volumes:
+  pgdata:

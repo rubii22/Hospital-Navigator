@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "session_id": 62,
+  "floor_id": 5,
+  "nodes": [
+    {
+      "id": "n_entry",
+      "label": "Scan Entry Point",
+      "type": "entrance",
+      "x": 15.0,
+      "y": 15.0,
+      "z": 0.0,
+      "accessible": true,
+      "metadata": null
+    }
+  ],
+  "edges": [],
+  "rooms": [
+    {
+      "id": "r_62",
+      "name": "Room 62",
+      "x": 35,
+      "y": 25
+    }
+  ],
+  "doors": []
+}

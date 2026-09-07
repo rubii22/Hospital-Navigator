@@ -1,0 +1,2403 @@
+{
+  "manifest": {
+    "hospital_id": 5,
+    "hospital_name": "St. Jude Metropolitan Medical Center",
+    "version": "1.2.0",
+    "generated_at": "2026-09-04T17:12:03.010050+00:00",
+    "floors_count": 4,
+    "destinations_count": 21
+  },
+  "bootstrap": {
+    "hospital": {
+      "id": 5,
+      "name": "St. Jude Metropolitan Medical Center",
+      "code": "SMC-METRO-01",
+      "address": "742 Healthcare Boulevard, Medical District",
+      "phone": "+1 (800) 555-0199",
+      "floors": [
+        "Ground Floor (Atrium & Emergency)",
+        "Floor 1 (Outpatient & Diagnostics)",
+        "Floor 2 (Cardiology & Heart Institute)",
+        "Floor 3 (Intensive Care & Surgery)"
+      ]
+    },
+    "buildings": [
+      {
+        "id": 8,
+        "name": "Main Clinical Tower (Building A)",
+        "code": "BLD-A",
+        "floors": [
+          {
+            "id": 8,
+            "name": "Ground Floor",
+            "floor_number": 0,
+            "display_name": "Ground Floor (Atrium & Emergency)",
+            "rooms_count": 4
+          },
+          {
+            "id": 9,
+            "name": "Floor 1",
+            "floor_number": 1,
+            "display_name": "Floor 1 (Outpatient & Diagnostics)",
+            "rooms_count": 3
+          },
+          {
+            "id": 10,
+            "name": "Floor 2",
+            "floor_number": 2,
+            "display_name": "Floor 2 (Cardiology & Heart Institute)",
+            "rooms_count": 3
+          },
+          {
+            "id": 11,
+            "name": "Floor 3",
+            "floor_number": 3,
+            "display_name": "Floor 3 (Intensive Care & Surgery)",
+            "rooms_count": 2
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Diagnostic & Surgical Pavilion (Building B)",
+        "code": "BLD-B",
+        "floors": []
+      }
+    ],
+    "destinations": [
+      {
+        "id": "dept_1",
+        "raw_id": 1,
+        "name": "Emergency & Trauma",
+        "detail": "Ground Floor (Atrium & Emergency) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "emergency",
+        "category": "Department",
+        "floor_id": 8,
+        "floor_name": "Ground Floor (Atrium & Emergency)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": null,
+        "type": "department"
+      },
+      {
+        "id": "dept_2",
+        "raw_id": 2,
+        "name": "Pharmacy & Dispensary",
+        "detail": "Ground Floor (Atrium & Emergency) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "pharmacy",
+        "category": "Department",
+        "floor_id": 8,
+        "floor_name": "Ground Floor (Atrium & Emergency)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": null,
+        "type": "department"
+      },
+      {
+        "id": "dept_3",
+        "raw_id": 3,
+        "name": "Radiology & Imaging",
+        "detail": "Ground Floor (Atrium & Emergency) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "radiology",
+        "category": "Department",
+        "floor_id": 8,
+        "floor_name": "Ground Floor (Atrium & Emergency)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": null,
+        "type": "department"
+      },
+      {
+        "id": "dept_4",
+        "raw_id": 4,
+        "name": "Outpatient Clinics",
+        "detail": "Floor 1 (Outpatient & Diagnostics) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "department",
+        "category": "Department",
+        "floor_id": 9,
+        "floor_name": "Floor 1 (Outpatient & Diagnostics)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": null,
+        "type": "department"
+      },
+      {
+        "id": "dept_5",
+        "raw_id": 5,
+        "name": "Pathology & Labs",
+        "detail": "Floor 1 (Outpatient & Diagnostics) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "department",
+        "category": "Department",
+        "floor_id": 9,
+        "floor_name": "Floor 1 (Outpatient & Diagnostics)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": null,
+        "type": "department"
+      },
+      {
+        "id": "dept_6",
+        "raw_id": 6,
+        "name": "Cardiology & Heart Center",
+        "detail": "Floor 2 (Cardiology & Heart Institute) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "department",
+        "category": "Department",
+        "floor_id": 10,
+        "floor_name": "Floor 2 (Cardiology & Heart Institute)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": null,
+        "type": "department"
+      },
+      {
+        "id": "dept_7",
+        "raw_id": 7,
+        "name": "MRI Diagnostic Unit",
+        "detail": "Floor 2 (Cardiology & Heart Institute) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "room",
+        "category": "Department",
+        "floor_id": 10,
+        "floor_name": "Floor 2 (Cardiology & Heart Institute)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": null,
+        "type": "department"
+      },
+      {
+        "id": "dept_8",
+        "raw_id": 8,
+        "name": "Intensive Care Unit (ICU)",
+        "detail": "Floor 3 (Intensive Care & Surgery) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "emergency",
+        "category": "Department",
+        "floor_id": 11,
+        "floor_name": "Floor 3 (Intensive Care & Surgery)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": null,
+        "type": "department"
+      },
+      {
+        "id": "dept_9",
+        "raw_id": 9,
+        "name": "General Surgery",
+        "detail": "Floor 3 (Intensive Care & Surgery) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "department",
+        "category": "Department",
+        "floor_id": 11,
+        "floor_name": "Floor 3 (Intensive Care & Surgery)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": null,
+        "type": "department"
+      },
+      {
+        "id": "room_5",
+        "raw_id": 5,
+        "name": "Main Triage & Reception",
+        "detail": "Ground Floor (Atrium & Emergency) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "room",
+        "category": "Room",
+        "floor_id": 8,
+        "floor_name": "Ground Floor (Atrium & Emergency)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": "G01",
+        "type": "general"
+      },
+      {
+        "id": "room_6",
+        "raw_id": 6,
+        "name": "Central Outpatient Pharmacy",
+        "detail": "Ground Floor (Atrium & Emergency) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "pharmacy",
+        "category": "Service",
+        "floor_id": 8,
+        "floor_name": "Ground Floor (Atrium & Emergency)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": "G04",
+        "type": "pharmacy"
+      },
+      {
+        "id": "room_7",
+        "raw_id": 7,
+        "name": "Emergency Trauma Bay 1",
+        "detail": "Ground Floor (Atrium & Emergency) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "emergency",
+        "category": "Room",
+        "floor_id": 8,
+        "floor_name": "Ground Floor (Atrium & Emergency)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": "G08",
+        "type": "icu"
+      },
+      {
+        "id": "room_8",
+        "raw_id": 8,
+        "name": "X-Ray & Digital Imaging",
+        "detail": "Ground Floor (Atrium & Emergency) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "radiology",
+        "category": "Room",
+        "floor_id": 8,
+        "floor_name": "Ground Floor (Atrium & Emergency)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": "G12",
+        "type": "radiology"
+      },
+      {
+        "id": "room_9",
+        "raw_id": 9,
+        "name": "Blood Sample & Phlebotomy",
+        "detail": "Floor 1 (Outpatient & Diagnostics) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "room",
+        "category": "Room",
+        "floor_id": 9,
+        "floor_name": "Floor 1 (Outpatient & Diagnostics)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": "105",
+        "type": "general"
+      },
+      {
+        "id": "room_10",
+        "raw_id": 10,
+        "name": "Specialist Consultation Suite 108",
+        "detail": "Floor 1 (Outpatient & Diagnostics) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "services",
+        "category": "Service",
+        "floor_id": 9,
+        "floor_name": "Floor 1 (Outpatient & Diagnostics)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": "108",
+        "type": "opd"
+      },
+      {
+        "id": "room_11",
+        "raw_id": 11,
+        "name": "Pediatric Health Center",
+        "detail": "Floor 1 (Outpatient & Diagnostics) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "services",
+        "category": "Service",
+        "floor_id": 9,
+        "floor_name": "Floor 1 (Outpatient & Diagnostics)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": "114",
+        "type": "opd"
+      },
+      {
+        "id": "room_12",
+        "raw_id": 12,
+        "name": "Cardiology OPD - Room 201",
+        "detail": "Floor 2 (Cardiology & Heart Institute) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "department",
+        "category": "Service",
+        "floor_id": 10,
+        "floor_name": "Floor 2 (Cardiology & Heart Institute)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": "201",
+        "type": "opd"
+      },
+      {
+        "id": "room_13",
+        "raw_id": 13,
+        "name": "Cardiac Cath Lab Suite",
+        "detail": "Floor 2 (Cardiology & Heart Institute) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "room",
+        "category": "Room",
+        "floor_id": 10,
+        "floor_name": "Floor 2 (Cardiology & Heart Institute)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": "205",
+        "type": "icu"
+      },
+      {
+        "id": "room_14",
+        "raw_id": 14,
+        "name": "High-Field MRI Scanner 1",
+        "detail": "Floor 2 (Cardiology & Heart Institute) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "radiology",
+        "category": "Room",
+        "floor_id": 10,
+        "floor_name": "Floor 2 (Cardiology & Heart Institute)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": "210",
+        "type": "mri"
+      },
+      {
+        "id": "room_15",
+        "raw_id": 15,
+        "name": "Intensive Care Unit - ICU 301",
+        "detail": "Floor 3 (Intensive Care & Surgery) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "emergency",
+        "category": "Room",
+        "floor_id": 11,
+        "floor_name": "Floor 3 (Intensive Care & Surgery)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": "301",
+        "type": "icu"
+      },
+      {
+        "id": "room_16",
+        "raw_id": 16,
+        "name": "Post-Operative Recovery Suite",
+        "detail": "Floor 3 (Intensive Care & Surgery) \u00b7 Main Clinical Tower (Building A)",
+        "icon": "room",
+        "category": "Room",
+        "floor_id": 11,
+        "floor_name": "Floor 3 (Intensive Care & Surgery)",
+        "building_name": "Main Clinical Tower (Building A)",
+        "room_number": "306",
+        "type": "general"
+      }
+    ],
+    "facilities": [
+      "Accessible entrance & ramps",
+      "Elevators available to all floors",
+      "Wheelchair accessible restrooms",
+      "Emergency nurse call stations",
+      "Pharmacy and Diagnostics"
+    ],
+    "emergency_contacts": [
+      {
+        "id": 4,
+        "title": "Hospital Main Reception",
+        "phone_number": "+1 (800) 555-0199",
+        "icon": "phone",
+        "category": "phone"
+      },
+      {
+        "id": 5,
+        "title": "Emergency & Trauma Hotline",
+        "phone_number": "+1 (800) 555-0911",
+        "icon": "location",
+        "category": "location"
+      },
+      {
+        "id": 6,
+        "title": "Ambulance Dispatch Control",
+        "phone_number": "911",
+        "icon": "ambulance",
+        "category": "ambulance"
+      },
+      {
+        "id": 7,
+        "title": "Cardiac Emergency Response",
+        "phone_number": "+1 (800) 555-0120",
+        "icon": "location",
+        "category": "location"
+      }
+    ],
+    "map_package": {
+      "version": "1.2.0",
+      "size": "2.4 MB",
+      "updated": "04 Sep 2026",
+      "floors_count": 4,
+      "nodes_count": 44,
+      "edges_count": 92,
+      "download_url": "/api/v1/navigator/hospitals/5/package"
+    }
+  },
+  "floors": [
+    {
+      "floor_id": 8,
+      "building_id": 8,
+      "floor_number": 0,
+      "display_name": "Ground Floor (Atrium & Emergency)",
+      "vector_map": {
+        "schema_version": "2.0",
+        "floor_id": 8,
+        "floor_name": "Ground Floor (Atrium & Emergency)",
+        "floor_number": 0,
+        "dimensions": {
+          "width": 100.0,
+          "height": 80.0,
+          "units": "meters"
+        },
+        "rooms": [
+          {
+            "id": "room_5",
+            "room_id": 5,
+            "name": "Main Triage & Reception",
+            "room_number": "G01",
+            "type": "general",
+            "x": 3.0,
+            "y": 9.0,
+            "width": 14.0,
+            "height": 10.0,
+            "center": {
+              "x": 10.0,
+              "y": 14.0
+            },
+            "bounds": [
+              {
+                "x": 3.0,
+                "y": 9.0
+              },
+              {
+                "x": 17.0,
+                "y": 9.0
+              },
+              {
+                "x": 17.0,
+                "y": 19.0
+              },
+              {
+                "x": 3.0,
+                "y": 19.0
+              }
+            ]
+          },
+          {
+            "id": "room_6",
+            "room_id": 6,
+            "name": "Central Outpatient Pharmacy",
+            "room_number": "G04",
+            "type": "pharmacy",
+            "x": 17.0,
+            "y": 9.0,
+            "width": 14.0,
+            "height": 10.0,
+            "center": {
+              "x": 24.0,
+              "y": 14.0
+            },
+            "bounds": [
+              {
+                "x": 17.0,
+                "y": 9.0
+              },
+              {
+                "x": 31.0,
+                "y": 9.0
+              },
+              {
+                "x": 31.0,
+                "y": 19.0
+              },
+              {
+                "x": 17.0,
+                "y": 19.0
+              }
+            ]
+          },
+          {
+            "id": "room_7",
+            "room_id": 7,
+            "name": "Emergency Trauma Bay 1",
+            "room_number": "G08",
+            "type": "icu",
+            "x": 31.0,
+            "y": 9.0,
+            "width": 14.0,
+            "height": 10.0,
+            "center": {
+              "x": 38.0,
+              "y": 14.0
+            },
+            "bounds": [
+              {
+                "x": 31.0,
+                "y": 9.0
+              },
+              {
+                "x": 45.0,
+                "y": 9.0
+              },
+              {
+                "x": 45.0,
+                "y": 19.0
+              },
+              {
+                "x": 31.0,
+                "y": 19.0
+              }
+            ]
+          },
+          {
+            "id": "room_8",
+            "room_id": 8,
+            "name": "X-Ray & Digital Imaging",
+            "room_number": "G12",
+            "type": "radiology",
+            "x": 43.0,
+            "y": 9.0,
+            "width": 14.0,
+            "height": 10.0,
+            "center": {
+              "x": 50.0,
+              "y": 14.0
+            },
+            "bounds": [
+              {
+                "x": 43.0,
+                "y": 9.0
+              },
+              {
+                "x": 57.0,
+                "y": 9.0
+              },
+              {
+                "x": 57.0,
+                "y": 19.0
+              },
+              {
+                "x": 43.0,
+                "y": 19.0
+              }
+            ]
+          }
+        ],
+        "doors": [
+          {
+            "id": "door_7",
+            "node_id": 7,
+            "room_id": 5,
+            "label": "Triage Entrance",
+            "x": 12.0,
+            "y": 24.0,
+            "z": 0.0
+          },
+          {
+            "id": "door_9",
+            "node_id": 9,
+            "room_id": 6,
+            "label": "Pharmacy Service Counter",
+            "x": 24.0,
+            "y": 24.0,
+            "z": 0.0
+          },
+          {
+            "id": "door_11",
+            "node_id": 11,
+            "room_id": 7,
+            "label": "Trauma Bay Doors",
+            "x": 38.0,
+            "y": 24.0,
+            "z": 0.0
+          },
+          {
+            "id": "door_13",
+            "node_id": 13,
+            "room_id": 8,
+            "label": "Radiology Suite Entrance",
+            "x": 50.0,
+            "y": 24.0,
+            "z": 0.0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "node_1",
+            "raw_id": 1,
+            "label": "Main Entrance QR Anchor",
+            "code": "N_G_ENT",
+            "type": "anchor",
+            "x": 10.0,
+            "y": 30.0,
+            "z": 0.0,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_2",
+            "raw_id": 2,
+            "label": "West Hallway Junction",
+            "code": "N_G_COR_1",
+            "type": "corridor",
+            "x": 22.0,
+            "y": 30.0,
+            "z": 0.0,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_3",
+            "raw_id": 3,
+            "label": "Central Lobby Spine",
+            "code": "N_G_COR_2",
+            "type": "junction",
+            "x": 36.0,
+            "y": 30.0,
+            "z": 0.0,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_4",
+            "raw_id": 4,
+            "label": "East Imaging Corridor",
+            "code": "N_G_COR_3",
+            "type": "corridor",
+            "x": 50.0,
+            "y": 30.0,
+            "z": 0.0,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_5",
+            "raw_id": 5,
+            "label": "Elevator Bank A (Ground)",
+            "code": "N_G_ELEV",
+            "type": "elevator",
+            "x": 36.0,
+            "y": 38.0,
+            "z": 0.0,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_6",
+            "raw_id": 6,
+            "label": "Stairwell West (Ground)",
+            "code": "N_G_STAIRS",
+            "type": "stairs",
+            "x": 22.0,
+            "y": 38.0,
+            "z": 0.0,
+            "room_id": null,
+            "accessible": false
+          },
+          {
+            "id": "node_7",
+            "raw_id": 7,
+            "label": "Triage Entrance",
+            "code": "N_G_D_R5",
+            "type": "door",
+            "x": 12.0,
+            "y": 24.0,
+            "z": 0.0,
+            "room_id": 5,
+            "accessible": true
+          },
+          {
+            "id": "node_8",
+            "raw_id": 8,
+            "label": "Main Triage & Reception",
+            "code": "N_G_R5",
+            "type": "room",
+            "x": 10.0,
+            "y": 14.0,
+            "z": 0.0,
+            "room_id": 5,
+            "accessible": true
+          },
+          {
+            "id": "node_9",
+            "raw_id": 9,
+            "label": "Pharmacy Service Counter",
+            "code": "N_G_D_R6",
+            "type": "door",
+            "x": 24.0,
+            "y": 24.0,
+            "z": 0.0,
+            "room_id": 6,
+            "accessible": true
+          },
+          {
+            "id": "node_10",
+            "raw_id": 10,
+            "label": "Central Outpatient Pharmacy",
+            "code": "N_G_R6",
+            "type": "room",
+            "x": 24.0,
+            "y": 14.0,
+            "z": 0.0,
+            "room_id": 6,
+            "accessible": true
+          },
+          {
+            "id": "node_11",
+            "raw_id": 11,
+            "label": "Trauma Bay Doors",
+            "code": "N_G_D_R7",
+            "type": "door",
+            "x": 38.0,
+            "y": 24.0,
+            "z": 0.0,
+            "room_id": 7,
+            "accessible": true
+          },
+          {
+            "id": "node_12",
+            "raw_id": 12,
+            "label": "Emergency Trauma Bay 1",
+            "code": "N_G_R7",
+            "type": "room",
+            "x": 38.0,
+            "y": 14.0,
+            "z": 0.0,
+            "room_id": 7,
+            "accessible": true
+          },
+          {
+            "id": "node_13",
+            "raw_id": 13,
+            "label": "Radiology Suite Entrance",
+            "code": "N_G_D_R8",
+            "type": "door",
+            "x": 50.0,
+            "y": 24.0,
+            "z": 0.0,
+            "room_id": 8,
+            "accessible": true
+          },
+          {
+            "id": "node_14",
+            "raw_id": 14,
+            "label": "X-Ray & Digital Imaging",
+            "code": "N_G_R8",
+            "type": "room",
+            "x": 50.0,
+            "y": 14.0,
+            "z": 0.0,
+            "room_id": 8,
+            "accessible": true
+          }
+        ],
+        "edges": [
+          {
+            "id": "edge_1",
+            "from_node_id": "node_1",
+            "to_node_id": "node_2",
+            "from_raw_id": 1,
+            "to_raw_id": 2,
+            "edge_type": "corridor",
+            "distance": 12.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_2",
+            "from_node_id": "node_2",
+            "to_node_id": "node_1",
+            "from_raw_id": 2,
+            "to_raw_id": 1,
+            "edge_type": "corridor",
+            "distance": 12.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_3",
+            "from_node_id": "node_2",
+            "to_node_id": "node_3",
+            "from_raw_id": 2,
+            "to_raw_id": 3,
+            "edge_type": "corridor",
+            "distance": 14.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_4",
+            "from_node_id": "node_3",
+            "to_node_id": "node_2",
+            "from_raw_id": 3,
+            "to_raw_id": 2,
+            "edge_type": "corridor",
+            "distance": 14.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_5",
+            "from_node_id": "node_3",
+            "to_node_id": "node_4",
+            "from_raw_id": 3,
+            "to_raw_id": 4,
+            "edge_type": "corridor",
+            "distance": 14.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_6",
+            "from_node_id": "node_4",
+            "to_node_id": "node_3",
+            "from_raw_id": 4,
+            "to_raw_id": 3,
+            "edge_type": "corridor",
+            "distance": 14.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_7",
+            "from_node_id": "node_3",
+            "to_node_id": "node_5",
+            "from_raw_id": 3,
+            "to_raw_id": 5,
+            "edge_type": "elevator",
+            "distance": 8.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_8",
+            "from_node_id": "node_5",
+            "to_node_id": "node_3",
+            "from_raw_id": 5,
+            "to_raw_id": 3,
+            "edge_type": "elevator",
+            "distance": 8.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_9",
+            "from_node_id": "node_2",
+            "to_node_id": "node_6",
+            "from_raw_id": 2,
+            "to_raw_id": 6,
+            "edge_type": "stairs",
+            "distance": 8.0,
+            "accessible": false,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_10",
+            "from_node_id": "node_6",
+            "to_node_id": "node_2",
+            "from_raw_id": 6,
+            "to_raw_id": 2,
+            "edge_type": "stairs",
+            "distance": 8.0,
+            "accessible": false,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_11",
+            "from_node_id": "node_1",
+            "to_node_id": "node_7",
+            "from_raw_id": 1,
+            "to_raw_id": 7,
+            "edge_type": "door",
+            "distance": 6.3,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_12",
+            "from_node_id": "node_7",
+            "to_node_id": "node_1",
+            "from_raw_id": 7,
+            "to_raw_id": 1,
+            "edge_type": "door",
+            "distance": 6.3,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_13",
+            "from_node_id": "node_7",
+            "to_node_id": "node_8",
+            "from_raw_id": 7,
+            "to_raw_id": 8,
+            "edge_type": "room",
+            "distance": 10.2,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_14",
+            "from_node_id": "node_8",
+            "to_node_id": "node_7",
+            "from_raw_id": 8,
+            "to_raw_id": 7,
+            "edge_type": "room",
+            "distance": 10.2,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_15",
+            "from_node_id": "node_2",
+            "to_node_id": "node_9",
+            "from_raw_id": 2,
+            "to_raw_id": 9,
+            "edge_type": "door",
+            "distance": 6.3,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_16",
+            "from_node_id": "node_9",
+            "to_node_id": "node_2",
+            "from_raw_id": 9,
+            "to_raw_id": 2,
+            "edge_type": "door",
+            "distance": 6.3,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_17",
+            "from_node_id": "node_9",
+            "to_node_id": "node_10",
+            "from_raw_id": 9,
+            "to_raw_id": 10,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_18",
+            "from_node_id": "node_10",
+            "to_node_id": "node_9",
+            "from_raw_id": 10,
+            "to_raw_id": 9,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_19",
+            "from_node_id": "node_3",
+            "to_node_id": "node_11",
+            "from_raw_id": 3,
+            "to_raw_id": 11,
+            "edge_type": "door",
+            "distance": 6.3,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_20",
+            "from_node_id": "node_11",
+            "to_node_id": "node_3",
+            "from_raw_id": 11,
+            "to_raw_id": 3,
+            "edge_type": "door",
+            "distance": 6.3,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_21",
+            "from_node_id": "node_11",
+            "to_node_id": "node_12",
+            "from_raw_id": 11,
+            "to_raw_id": 12,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_22",
+            "from_node_id": "node_12",
+            "to_node_id": "node_11",
+            "from_raw_id": 12,
+            "to_raw_id": 11,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_23",
+            "from_node_id": "node_4",
+            "to_node_id": "node_13",
+            "from_raw_id": 4,
+            "to_raw_id": 13,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_24",
+            "from_node_id": "node_13",
+            "to_node_id": "node_4",
+            "from_raw_id": 13,
+            "to_raw_id": 4,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_25",
+            "from_node_id": "node_13",
+            "to_node_id": "node_14",
+            "from_raw_id": 13,
+            "to_raw_id": 14,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_26",
+            "from_node_id": "node_14",
+            "to_node_id": "node_13",
+            "from_raw_id": 14,
+            "to_raw_id": 13,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          }
+        ]
+      }
+    },
+    {
+      "floor_id": 9,
+      "building_id": 8,
+      "floor_number": 1,
+      "display_name": "Floor 1 (Outpatient & Diagnostics)",
+      "vector_map": {
+        "schema_version": "2.0",
+        "floor_id": 9,
+        "floor_name": "Floor 1 (Outpatient & Diagnostics)",
+        "floor_number": 1,
+        "dimensions": {
+          "width": 100.0,
+          "height": 80.0,
+          "units": "meters"
+        },
+        "rooms": [
+          {
+            "id": "room_9",
+            "room_id": 9,
+            "name": "Blood Sample & Phlebotomy",
+            "room_number": "105",
+            "type": "general",
+            "x": 13.0,
+            "y": 9.0,
+            "width": 14.0,
+            "height": 10.0,
+            "center": {
+              "x": 20.0,
+              "y": 14.0
+            },
+            "bounds": [
+              {
+                "x": 13.0,
+                "y": 9.0
+              },
+              {
+                "x": 27.0,
+                "y": 9.0
+              },
+              {
+                "x": 27.0,
+                "y": 19.0
+              },
+              {
+                "x": 13.0,
+                "y": 19.0
+              }
+            ]
+          },
+          {
+            "id": "room_10",
+            "room_id": 10,
+            "name": "Specialist Consultation Suite 108",
+            "room_number": "108",
+            "type": "opd",
+            "x": 29.0,
+            "y": 9.0,
+            "width": 14.0,
+            "height": 10.0,
+            "center": {
+              "x": 36.0,
+              "y": 14.0
+            },
+            "bounds": [
+              {
+                "x": 29.0,
+                "y": 9.0
+              },
+              {
+                "x": 43.0,
+                "y": 9.0
+              },
+              {
+                "x": 43.0,
+                "y": 19.0
+              },
+              {
+                "x": 29.0,
+                "y": 19.0
+              }
+            ]
+          },
+          {
+            "id": "room_11",
+            "room_id": 11,
+            "name": "Pediatric Health Center",
+            "room_number": "114",
+            "type": "opd",
+            "x": 43.0,
+            "y": 9.0,
+            "width": 14.0,
+            "height": 10.0,
+            "center": {
+              "x": 50.0,
+              "y": 14.0
+            },
+            "bounds": [
+              {
+                "x": 43.0,
+                "y": 9.0
+              },
+              {
+                "x": 57.0,
+                "y": 9.0
+              },
+              {
+                "x": 57.0,
+                "y": 19.0
+              },
+              {
+                "x": 43.0,
+                "y": 19.0
+              }
+            ]
+          }
+        ],
+        "doors": [
+          {
+            "id": "door_20",
+            "node_id": 20,
+            "room_id": 9,
+            "label": "Phlebotomy Entrance",
+            "x": 20.0,
+            "y": 24.0,
+            "z": 3.5
+          },
+          {
+            "id": "door_22",
+            "node_id": 22,
+            "room_id": 10,
+            "label": "Specialist Suite 108 Door",
+            "x": 36.0,
+            "y": 24.0,
+            "z": 3.5
+          },
+          {
+            "id": "door_24",
+            "node_id": 24,
+            "room_id": 11,
+            "label": "Pediatric Clinic Door",
+            "x": 50.0,
+            "y": 24.0,
+            "z": 3.5
+          }
+        ],
+        "nodes": [
+          {
+            "id": "node_15",
+            "raw_id": 15,
+            "label": "Elevator Bank A (Floor 1)",
+            "code": "N_1_ELEV",
+            "type": "elevator",
+            "x": 36.0,
+            "y": 38.0,
+            "z": 3.5,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_16",
+            "raw_id": 16,
+            "label": "Stairwell West (Floor 1)",
+            "code": "N_1_STAIRS",
+            "type": "stairs",
+            "x": 22.0,
+            "y": 38.0,
+            "z": 3.5,
+            "room_id": null,
+            "accessible": false
+          },
+          {
+            "id": "node_17",
+            "raw_id": 17,
+            "label": "Floor 1 Central Lobby",
+            "code": "N_1_COR_2",
+            "type": "junction",
+            "x": 36.0,
+            "y": 30.0,
+            "z": 3.5,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_18",
+            "raw_id": 18,
+            "label": "Floor 1 West Hallway",
+            "code": "N_1_COR_1",
+            "type": "corridor",
+            "x": 20.0,
+            "y": 30.0,
+            "z": 3.5,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_19",
+            "raw_id": 19,
+            "label": "Floor 1 East Hallway",
+            "code": "N_1_COR_3",
+            "type": "corridor",
+            "x": 50.0,
+            "y": 30.0,
+            "z": 3.5,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_20",
+            "raw_id": 20,
+            "label": "Phlebotomy Entrance",
+            "code": "N_1_D_R9",
+            "type": "door",
+            "x": 20.0,
+            "y": 24.0,
+            "z": 3.5,
+            "room_id": 9,
+            "accessible": true
+          },
+          {
+            "id": "node_21",
+            "raw_id": 21,
+            "label": "Blood Sample & Phlebotomy",
+            "code": "N_1_R9",
+            "type": "room",
+            "x": 20.0,
+            "y": 14.0,
+            "z": 3.5,
+            "room_id": 9,
+            "accessible": true
+          },
+          {
+            "id": "node_22",
+            "raw_id": 22,
+            "label": "Specialist Suite 108 Door",
+            "code": "N_1_D_R10",
+            "type": "door",
+            "x": 36.0,
+            "y": 24.0,
+            "z": 3.5,
+            "room_id": 10,
+            "accessible": true
+          },
+          {
+            "id": "node_23",
+            "raw_id": 23,
+            "label": "Specialist Consultation Suite 108",
+            "code": "N_1_R10",
+            "type": "room",
+            "x": 36.0,
+            "y": 14.0,
+            "z": 3.5,
+            "room_id": 10,
+            "accessible": true
+          },
+          {
+            "id": "node_24",
+            "raw_id": 24,
+            "label": "Pediatric Clinic Door",
+            "code": "N_1_D_R11",
+            "type": "door",
+            "x": 50.0,
+            "y": 24.0,
+            "z": 3.5,
+            "room_id": 11,
+            "accessible": true
+          },
+          {
+            "id": "node_25",
+            "raw_id": 25,
+            "label": "Pediatric Health Center",
+            "code": "N_1_R11",
+            "type": "room",
+            "x": 50.0,
+            "y": 14.0,
+            "z": 3.5,
+            "room_id": 11,
+            "accessible": true
+          }
+        ],
+        "edges": [
+          {
+            "id": "edge_27",
+            "from_node_id": "node_15",
+            "to_node_id": "node_17",
+            "from_raw_id": 15,
+            "to_raw_id": 17,
+            "edge_type": "elevator",
+            "distance": 8.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_28",
+            "from_node_id": "node_17",
+            "to_node_id": "node_15",
+            "from_raw_id": 17,
+            "to_raw_id": 15,
+            "edge_type": "elevator",
+            "distance": 8.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_29",
+            "from_node_id": "node_16",
+            "to_node_id": "node_18",
+            "from_raw_id": 16,
+            "to_raw_id": 18,
+            "edge_type": "stairs",
+            "distance": 8.2,
+            "accessible": false,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_30",
+            "from_node_id": "node_18",
+            "to_node_id": "node_16",
+            "from_raw_id": 18,
+            "to_raw_id": 16,
+            "edge_type": "stairs",
+            "distance": 8.2,
+            "accessible": false,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_31",
+            "from_node_id": "node_18",
+            "to_node_id": "node_17",
+            "from_raw_id": 18,
+            "to_raw_id": 17,
+            "edge_type": "corridor",
+            "distance": 16.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_32",
+            "from_node_id": "node_17",
+            "to_node_id": "node_18",
+            "from_raw_id": 17,
+            "to_raw_id": 18,
+            "edge_type": "corridor",
+            "distance": 16.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_33",
+            "from_node_id": "node_17",
+            "to_node_id": "node_19",
+            "from_raw_id": 17,
+            "to_raw_id": 19,
+            "edge_type": "corridor",
+            "distance": 14.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_34",
+            "from_node_id": "node_19",
+            "to_node_id": "node_17",
+            "from_raw_id": 19,
+            "to_raw_id": 17,
+            "edge_type": "corridor",
+            "distance": 14.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_35",
+            "from_node_id": "node_18",
+            "to_node_id": "node_20",
+            "from_raw_id": 18,
+            "to_raw_id": 20,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_36",
+            "from_node_id": "node_20",
+            "to_node_id": "node_18",
+            "from_raw_id": 20,
+            "to_raw_id": 18,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_37",
+            "from_node_id": "node_20",
+            "to_node_id": "node_21",
+            "from_raw_id": 20,
+            "to_raw_id": 21,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_38",
+            "from_node_id": "node_21",
+            "to_node_id": "node_20",
+            "from_raw_id": 21,
+            "to_raw_id": 20,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_39",
+            "from_node_id": "node_17",
+            "to_node_id": "node_22",
+            "from_raw_id": 17,
+            "to_raw_id": 22,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_40",
+            "from_node_id": "node_22",
+            "to_node_id": "node_17",
+            "from_raw_id": 22,
+            "to_raw_id": 17,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_41",
+            "from_node_id": "node_22",
+            "to_node_id": "node_23",
+            "from_raw_id": 22,
+            "to_raw_id": 23,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_42",
+            "from_node_id": "node_23",
+            "to_node_id": "node_22",
+            "from_raw_id": 23,
+            "to_raw_id": 22,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_43",
+            "from_node_id": "node_19",
+            "to_node_id": "node_24",
+            "from_raw_id": 19,
+            "to_raw_id": 24,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_44",
+            "from_node_id": "node_24",
+            "to_node_id": "node_19",
+            "from_raw_id": 24,
+            "to_raw_id": 19,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_45",
+            "from_node_id": "node_24",
+            "to_node_id": "node_25",
+            "from_raw_id": 24,
+            "to_raw_id": 25,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_46",
+            "from_node_id": "node_25",
+            "to_node_id": "node_24",
+            "from_raw_id": 25,
+            "to_raw_id": 24,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          }
+        ]
+      }
+    },
+    {
+      "floor_id": 10,
+      "building_id": 8,
+      "floor_number": 2,
+      "display_name": "Floor 2 (Cardiology & Heart Institute)",
+      "vector_map": {
+        "schema_version": "2.0",
+        "floor_id": 10,
+        "floor_name": "Floor 2 (Cardiology & Heart Institute)",
+        "floor_number": 2,
+        "dimensions": {
+          "width": 100.0,
+          "height": 80.0,
+          "units": "meters"
+        },
+        "rooms": [
+          {
+            "id": "room_12",
+            "room_id": 12,
+            "name": "Cardiology OPD - Room 201",
+            "room_number": "201",
+            "type": "opd",
+            "x": 13.0,
+            "y": 9.0,
+            "width": 14.0,
+            "height": 10.0,
+            "center": {
+              "x": 20.0,
+              "y": 14.0
+            },
+            "bounds": [
+              {
+                "x": 13.0,
+                "y": 9.0
+              },
+              {
+                "x": 27.0,
+                "y": 9.0
+              },
+              {
+                "x": 27.0,
+                "y": 19.0
+              },
+              {
+                "x": 13.0,
+                "y": 19.0
+              }
+            ]
+          },
+          {
+            "id": "room_13",
+            "room_id": 13,
+            "name": "Cardiac Cath Lab Suite",
+            "room_number": "205",
+            "type": "icu",
+            "x": 29.0,
+            "y": 9.0,
+            "width": 14.0,
+            "height": 10.0,
+            "center": {
+              "x": 36.0,
+              "y": 14.0
+            },
+            "bounds": [
+              {
+                "x": 29.0,
+                "y": 9.0
+              },
+              {
+                "x": 43.0,
+                "y": 9.0
+              },
+              {
+                "x": 43.0,
+                "y": 19.0
+              },
+              {
+                "x": 29.0,
+                "y": 19.0
+              }
+            ]
+          },
+          {
+            "id": "room_14",
+            "room_id": 14,
+            "name": "High-Field MRI Scanner 1",
+            "room_number": "210",
+            "type": "mri",
+            "x": 45.0,
+            "y": 9.0,
+            "width": 14.0,
+            "height": 10.0,
+            "center": {
+              "x": 52.0,
+              "y": 14.0
+            },
+            "bounds": [
+              {
+                "x": 45.0,
+                "y": 9.0
+              },
+              {
+                "x": 59.0,
+                "y": 9.0
+              },
+              {
+                "x": 59.0,
+                "y": 19.0
+              },
+              {
+                "x": 45.0,
+                "y": 19.0
+              }
+            ]
+          }
+        ],
+        "doors": [
+          {
+            "id": "door_31",
+            "node_id": 31,
+            "room_id": 12,
+            "label": "Cardiology OPD Door",
+            "x": 20.0,
+            "y": 24.0,
+            "z": 7.0
+          },
+          {
+            "id": "door_33",
+            "node_id": 33,
+            "room_id": 13,
+            "label": "Cath Lab Airlock Door",
+            "x": 36.0,
+            "y": 24.0,
+            "z": 7.0
+          },
+          {
+            "id": "door_35",
+            "node_id": 35,
+            "room_id": 14,
+            "label": "MRI Suite Shielded Door",
+            "x": 52.0,
+            "y": 24.0,
+            "z": 7.0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "node_26",
+            "raw_id": 26,
+            "label": "Elevator Bank A (Floor 2)",
+            "code": "N_2_ELEV",
+            "type": "elevator",
+            "x": 36.0,
+            "y": 38.0,
+            "z": 7.0,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_27",
+            "raw_id": 27,
+            "label": "Stairwell West (Floor 2)",
+            "code": "N_2_STAIRS",
+            "type": "stairs",
+            "x": 22.0,
+            "y": 38.0,
+            "z": 7.0,
+            "room_id": null,
+            "accessible": false
+          },
+          {
+            "id": "node_28",
+            "raw_id": 28,
+            "label": "Floor 2 Central Hallway",
+            "code": "N_2_COR_2",
+            "type": "junction",
+            "x": 36.0,
+            "y": 30.0,
+            "z": 7.0,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_29",
+            "raw_id": 29,
+            "label": "Cardiology Wing",
+            "code": "N_2_COR_1",
+            "type": "corridor",
+            "x": 20.0,
+            "y": 30.0,
+            "z": 7.0,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_30",
+            "raw_id": 30,
+            "label": "Advanced Imaging Wing",
+            "code": "N_2_COR_3",
+            "type": "corridor",
+            "x": 52.0,
+            "y": 30.0,
+            "z": 7.0,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_31",
+            "raw_id": 31,
+            "label": "Cardiology OPD Door",
+            "code": "N_2_D_R12",
+            "type": "door",
+            "x": 20.0,
+            "y": 24.0,
+            "z": 7.0,
+            "room_id": 12,
+            "accessible": true
+          },
+          {
+            "id": "node_32",
+            "raw_id": 32,
+            "label": "Cardiology OPD - Room 201",
+            "code": "N_2_R12",
+            "type": "room",
+            "x": 20.0,
+            "y": 14.0,
+            "z": 7.0,
+            "room_id": 12,
+            "accessible": true
+          },
+          {
+            "id": "node_33",
+            "raw_id": 33,
+            "label": "Cath Lab Airlock Door",
+            "code": "N_2_D_R13",
+            "type": "door",
+            "x": 36.0,
+            "y": 24.0,
+            "z": 7.0,
+            "room_id": 13,
+            "accessible": true
+          },
+          {
+            "id": "node_34",
+            "raw_id": 34,
+            "label": "Cardiac Cath Lab Suite",
+            "code": "N_2_R13",
+            "type": "room",
+            "x": 36.0,
+            "y": 14.0,
+            "z": 7.0,
+            "room_id": 13,
+            "accessible": true
+          },
+          {
+            "id": "node_35",
+            "raw_id": 35,
+            "label": "MRI Suite Shielded Door",
+            "code": "N_2_D_R14",
+            "type": "door",
+            "x": 52.0,
+            "y": 24.0,
+            "z": 7.0,
+            "room_id": 14,
+            "accessible": true
+          },
+          {
+            "id": "node_36",
+            "raw_id": 36,
+            "label": "High-Field MRI Scanner 1",
+            "code": "N_2_R14",
+            "type": "room",
+            "x": 52.0,
+            "y": 14.0,
+            "z": 7.0,
+            "room_id": 14,
+            "accessible": true
+          }
+        ],
+        "edges": [
+          {
+            "id": "edge_47",
+            "from_node_id": "node_26",
+            "to_node_id": "node_28",
+            "from_raw_id": 26,
+            "to_raw_id": 28,
+            "edge_type": "elevator",
+            "distance": 8.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_48",
+            "from_node_id": "node_28",
+            "to_node_id": "node_26",
+            "from_raw_id": 28,
+            "to_raw_id": 26,
+            "edge_type": "elevator",
+            "distance": 8.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_49",
+            "from_node_id": "node_27",
+            "to_node_id": "node_29",
+            "from_raw_id": 27,
+            "to_raw_id": 29,
+            "edge_type": "stairs",
+            "distance": 8.2,
+            "accessible": false,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_50",
+            "from_node_id": "node_29",
+            "to_node_id": "node_27",
+            "from_raw_id": 29,
+            "to_raw_id": 27,
+            "edge_type": "stairs",
+            "distance": 8.2,
+            "accessible": false,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_51",
+            "from_node_id": "node_29",
+            "to_node_id": "node_28",
+            "from_raw_id": 29,
+            "to_raw_id": 28,
+            "edge_type": "corridor",
+            "distance": 16.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_52",
+            "from_node_id": "node_28",
+            "to_node_id": "node_29",
+            "from_raw_id": 28,
+            "to_raw_id": 29,
+            "edge_type": "corridor",
+            "distance": 16.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_53",
+            "from_node_id": "node_28",
+            "to_node_id": "node_30",
+            "from_raw_id": 28,
+            "to_raw_id": 30,
+            "edge_type": "corridor",
+            "distance": 16.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_54",
+            "from_node_id": "node_30",
+            "to_node_id": "node_28",
+            "from_raw_id": 30,
+            "to_raw_id": 28,
+            "edge_type": "corridor",
+            "distance": 16.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_55",
+            "from_node_id": "node_29",
+            "to_node_id": "node_31",
+            "from_raw_id": 29,
+            "to_raw_id": 31,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_56",
+            "from_node_id": "node_31",
+            "to_node_id": "node_29",
+            "from_raw_id": 31,
+            "to_raw_id": 29,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_57",
+            "from_node_id": "node_31",
+            "to_node_id": "node_32",
+            "from_raw_id": 31,
+            "to_raw_id": 32,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_58",
+            "from_node_id": "node_32",
+            "to_node_id": "node_31",
+            "from_raw_id": 32,
+            "to_raw_id": 31,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_59",
+            "from_node_id": "node_28",
+            "to_node_id": "node_33",
+            "from_raw_id": 28,
+            "to_raw_id": 33,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_60",
+            "from_node_id": "node_33",
+            "to_node_id": "node_28",
+            "from_raw_id": 33,
+            "to_raw_id": 28,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_61",
+            "from_node_id": "node_33",
+            "to_node_id": "node_34",
+            "from_raw_id": 33,
+            "to_raw_id": 34,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_62",
+            "from_node_id": "node_34",
+            "to_node_id": "node_33",
+            "from_raw_id": 34,
+            "to_raw_id": 33,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_63",
+            "from_node_id": "node_30",
+            "to_node_id": "node_35",
+            "from_raw_id": 30,
+            "to_raw_id": 35,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_64",
+            "from_node_id": "node_35",
+            "to_node_id": "node_30",
+            "from_raw_id": 35,
+            "to_raw_id": 30,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_65",
+            "from_node_id": "node_35",
+            "to_node_id": "node_36",
+            "from_raw_id": 35,
+            "to_raw_id": 36,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_66",
+            "from_node_id": "node_36",
+            "to_node_id": "node_35",
+            "from_raw_id": 36,
+            "to_raw_id": 35,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          }
+        ]
+      }
+    },
+    {
+      "floor_id": 11,
+      "building_id": 8,
+      "floor_number": 3,
+      "display_name": "Floor 3 (Intensive Care & Surgery)",
+      "vector_map": {
+        "schema_version": "2.0",
+        "floor_id": 11,
+        "floor_name": "Floor 3 (Intensive Care & Surgery)",
+        "floor_number": 3,
+        "dimensions": {
+          "width": 100.0,
+          "height": 80.0,
+          "units": "meters"
+        },
+        "rooms": [
+          {
+            "id": "room_15",
+            "room_id": 15,
+            "name": "Intensive Care Unit - ICU 301",
+            "room_number": "301",
+            "type": "icu",
+            "x": 29.0,
+            "y": 9.0,
+            "width": 14.0,
+            "height": 10.0,
+            "center": {
+              "x": 36.0,
+              "y": 14.0
+            },
+            "bounds": [
+              {
+                "x": 29.0,
+                "y": 9.0
+              },
+              {
+                "x": 43.0,
+                "y": 9.0
+              },
+              {
+                "x": 43.0,
+                "y": 19.0
+              },
+              {
+                "x": 29.0,
+                "y": 19.0
+              }
+            ]
+          },
+          {
+            "id": "room_16",
+            "room_id": 16,
+            "name": "Post-Operative Recovery Suite",
+            "room_number": "306",
+            "type": "general",
+            "x": 43.0,
+            "y": 9.0,
+            "width": 14.0,
+            "height": 10.0,
+            "center": {
+              "x": 50.0,
+              "y": 14.0
+            },
+            "bounds": [
+              {
+                "x": 43.0,
+                "y": 9.0
+              },
+              {
+                "x": 57.0,
+                "y": 9.0
+              },
+              {
+                "x": 57.0,
+                "y": 19.0
+              },
+              {
+                "x": 43.0,
+                "y": 19.0
+              }
+            ]
+          }
+        ],
+        "doors": [
+          {
+            "id": "door_41",
+            "node_id": 41,
+            "room_id": 15,
+            "label": "ICU 301 Double Doors",
+            "x": 36.0,
+            "y": 24.0,
+            "z": 10.5
+          },
+          {
+            "id": "door_43",
+            "node_id": 43,
+            "room_id": 16,
+            "label": "Post-Op Recovery Door",
+            "x": 50.0,
+            "y": 24.0,
+            "z": 10.5
+          }
+        ],
+        "nodes": [
+          {
+            "id": "node_37",
+            "raw_id": 37,
+            "label": "Elevator Bank A (Floor 3)",
+            "code": "N_3_ELEV",
+            "type": "elevator",
+            "x": 36.0,
+            "y": 38.0,
+            "z": 10.5,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_38",
+            "raw_id": 38,
+            "label": "Stairwell West (Floor 3)",
+            "code": "N_3_STAIRS",
+            "type": "stairs",
+            "x": 22.0,
+            "y": 38.0,
+            "z": 10.5,
+            "room_id": null,
+            "accessible": false
+          },
+          {
+            "id": "node_39",
+            "raw_id": 39,
+            "label": "ICU Main Access Lobby",
+            "code": "N_3_COR_2",
+            "type": "junction",
+            "x": 36.0,
+            "y": 30.0,
+            "z": 10.5,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_40",
+            "raw_id": 40,
+            "label": "ICU East Corridor",
+            "code": "N_3_COR_3",
+            "type": "corridor",
+            "x": 50.0,
+            "y": 30.0,
+            "z": 10.5,
+            "room_id": null,
+            "accessible": true
+          },
+          {
+            "id": "node_41",
+            "raw_id": 41,
+            "label": "ICU 301 Double Doors",
+            "code": "N_3_D_R15",
+            "type": "door",
+            "x": 36.0,
+            "y": 24.0,
+            "z": 10.5,
+            "room_id": 15,
+            "accessible": true
+          },
+          {
+            "id": "node_42",
+            "raw_id": 42,
+            "label": "Intensive Care Unit - ICU 301",
+            "code": "N_3_R15",
+            "type": "room",
+            "x": 36.0,
+            "y": 14.0,
+            "z": 10.5,
+            "room_id": 15,
+            "accessible": true
+          },
+          {
+            "id": "node_43",
+            "raw_id": 43,
+            "label": "Post-Op Recovery Door",
+            "code": "N_3_D_R16",
+            "type": "door",
+            "x": 50.0,
+            "y": 24.0,
+            "z": 10.5,
+            "room_id": 16,
+            "accessible": true
+          },
+          {
+            "id": "node_44",
+            "raw_id": 44,
+            "label": "Post-Operative Recovery Suite",
+            "code": "N_3_R16",
+            "type": "room",
+            "x": 50.0,
+            "y": 14.0,
+            "z": 10.5,
+            "room_id": 16,
+            "accessible": true
+          }
+        ],
+        "edges": [
+          {
+            "id": "edge_67",
+            "from_node_id": "node_37",
+            "to_node_id": "node_39",
+            "from_raw_id": 37,
+            "to_raw_id": 39,
+            "edge_type": "elevator",
+            "distance": 8.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_68",
+            "from_node_id": "node_39",
+            "to_node_id": "node_37",
+            "from_raw_id": 39,
+            "to_raw_id": 37,
+            "edge_type": "elevator",
+            "distance": 8.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_69",
+            "from_node_id": "node_38",
+            "to_node_id": "node_39",
+            "from_raw_id": 38,
+            "to_raw_id": 39,
+            "edge_type": "stairs",
+            "distance": 16.1,
+            "accessible": false,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_70",
+            "from_node_id": "node_39",
+            "to_node_id": "node_38",
+            "from_raw_id": 39,
+            "to_raw_id": 38,
+            "edge_type": "stairs",
+            "distance": 16.1,
+            "accessible": false,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_71",
+            "from_node_id": "node_39",
+            "to_node_id": "node_40",
+            "from_raw_id": 39,
+            "to_raw_id": 40,
+            "edge_type": "corridor",
+            "distance": 14.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_72",
+            "from_node_id": "node_40",
+            "to_node_id": "node_39",
+            "from_raw_id": 40,
+            "to_raw_id": 39,
+            "edge_type": "corridor",
+            "distance": 14.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_73",
+            "from_node_id": "node_39",
+            "to_node_id": "node_41",
+            "from_raw_id": 39,
+            "to_raw_id": 41,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_74",
+            "from_node_id": "node_41",
+            "to_node_id": "node_39",
+            "from_raw_id": 41,
+            "to_raw_id": 39,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_75",
+            "from_node_id": "node_41",
+            "to_node_id": "node_42",
+            "from_raw_id": 41,
+            "to_raw_id": 42,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_76",
+            "from_node_id": "node_42",
+            "to_node_id": "node_41",
+            "from_raw_id": 42,
+            "to_raw_id": 41,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_77",
+            "from_node_id": "node_40",
+            "to_node_id": "node_43",
+            "from_raw_id": 40,
+            "to_raw_id": 43,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_78",
+            "from_node_id": "node_43",
+            "to_node_id": "node_40",
+            "from_raw_id": 43,
+            "to_raw_id": 40,
+            "edge_type": "door",
+            "distance": 6.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_79",
+            "from_node_id": "node_43",
+            "to_node_id": "node_44",
+            "from_raw_id": 43,
+            "to_raw_id": 44,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          },
+          {
+            "id": "edge_80",
+            "from_node_id": "node_44",
+            "to_node_id": "node_43",
+            "from_raw_id": 44,
+            "to_raw_id": 43,
+            "edge_type": "room",
+            "distance": 10.0,
+            "accessible": true,
+            "bidirectional": true
+          }
+        ]
+      }
+    }
+  ]
+}

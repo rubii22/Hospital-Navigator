@@ -1,0 +1,18 @@
+@use "variables" as *;
+// Web styling source. Native equivalents consume src/constants/tokens.ts.
+.navigator-shell {
+  background: $color-ink;
+  color: $color-text;
+}
+.navigator-card {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-card;
+  box-shadow: $shadow-elevation;
+}
+.navigator-muted-text {
+  color: $color-text-muted;
+}
+.navigator-primary-action {
+  background: linear-gradient(135deg, $color-blue, $color-violet);
+}

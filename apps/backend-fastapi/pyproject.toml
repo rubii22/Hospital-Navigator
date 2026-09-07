@@ -1,0 +1,28 @@
+[project]
+name = "backend-fastapi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.141.1",
+    "sqlmodel>=0.0.22",
+    "geoalchemy2>=0.15.0",
+    "psycopg2-binary>=2.9.12",
+    "asyncpg>=0.31.0",
+    "alembic>=1.19.1",
+    "pydantic-settings>=2.15.0",
+    "pyjwt>=2.13.0",
+    "passlib>=1.7.4",
+    "bcrypt>=5.0.0",
+    "email-validator>=2.3.0",
+    "celery>=5.6.3",
+    "redis>=8.1.0",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.0.1",
+    "pillow>=10.0.0",
+    "opencv-python-headless>=4.8.0",
+    "numpy>=1.26.0",
+    "pytesseract>=0.3.10",
+    "onnxruntime>=1.18.0",
+]
